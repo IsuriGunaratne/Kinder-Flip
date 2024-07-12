@@ -5,12 +5,16 @@ import HappyCustomers from "../components/HappyCustomers";
 import PottyTraining from "../components/PottyTraining";
 import Footer from "../components/Footer";
 import ImagePopup from "../components/ImagePopup";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 
 const HomePageDesign = () => {
   return (
     <div className="w-full relative rounded-t-6xl rounded-b-none bg-download-nero box-border overflow-hidden flex flex-col items-start justify-start gap-[284px] leading-[normal] tracking-[normal] text-center text-29xl text-gray-400 font-roboto-serif border-[3px] border-solid border-download-nero mq450:gap-[71px] mq800:gap-[142px]">
       <div className="w-full h-[123px] relative overflow-hidden shrink-0 hidden max-w-full z-[9]" />
       <div className="w-full h-[25.5rem] absolute !m-[0] top-[40rem] left-[0] z-[7] flex items-center justify-center">
+      <SpeedInsights/>
+
         <ImagePopup />
       </div>
       <FrameComponent />
