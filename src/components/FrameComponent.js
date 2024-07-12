@@ -123,7 +123,7 @@ const FrameComponent = ({ className = "" }) => {
         <a href="#">
           <img
             className="icon w-[25px] h-[26px] relative z-[1] hover:scale-110 hover:opacity-80 transition-transform  duration-300"
-            // loading="lazy"
+            loading="lazy"
             alt="Search"
             src="/outlineinterfacesearch.svg"
           />
@@ -133,7 +133,7 @@ const FrameComponent = ({ className = "" }) => {
         <a href="#">
           <img
             className="icon w-[27px] h-[27px] relative z-[1] hover:scale-110 hover:opacity-80 transition-transform duration-300"
-            // loading="lazy"
+            loading="lazy"
             alt="User"
             src="/outlinecommunicationuser.svg"
           />
@@ -143,7 +143,7 @@ const FrameComponent = ({ className = "" }) => {
         <a href="#">
           <img
             className="icon w-6 h-[25px] relative overflow-hidden shrink-0 z-[1] hover:scale-110 hover:opacity-80 transition-transform  duration-300"
-            // loading="lazy"
+            loading="lazy"
             alt="Heart"
             src="/heart-1.svg"
           />
@@ -153,7 +153,7 @@ const FrameComponent = ({ className = "" }) => {
         <a href="#">
           <img
             className="icon w-8 h-[33px] relative overflow-hidden shrink-0 z-[1] hover:scale-110 hover:opacity-80 transition-transform duration-300"
-            // loading="lazy"
+            loading="lazy"
             alt="Shopping Bag"
             src="/shoppingbag-1.svg"
           />
