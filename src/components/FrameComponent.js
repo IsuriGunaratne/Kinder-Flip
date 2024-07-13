@@ -102,7 +102,6 @@ const FrameComponent = ({ className = "" }) => {
                 </a>
               </button>
 
-            {/* navigation bar */}
 
               <div className={`flex-1 flex flex-col items-start justify-start pt-1 px-0 pb-0 box-border min-w-[322px] max-w-full text-mini text-download-black ${className}`}>
                 <div className="self-stretch flex flex-row items-start justify-center [row-gap:20px] mq800:flex-wrap">
