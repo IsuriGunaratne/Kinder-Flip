@@ -82,14 +82,12 @@ const FrameComponent = ({ className = "" }) => {
                 </button>
                 
               </div>
-              <div className="flex-[0.588] shadow-[0px_22px_25px_rgba(93,_92,_92,_0.1)] rounded-81xl [background:linear-gradient(180deg,_#fff,_#fdfdfd)] box-border flex flex-row items-start justify-start pt-2.5 px-7 pb-1.5 min-w-[136px] max-w-[138px] shrink-0 z-[2] ml-[-52.2px] border-[2px] border-solid border-download-black mq450:flex-1
-              hover:scale-110 hover:opacity-90 transition-transform duration-300">
-
-                <a href="#" className="[text-decoration:none] w-[58.5px] relative text-[inherit] inline-block shrink-0 z-[3]">
+               <button className="cursor-pointer pt-2.5 px-[26px] pb-1.5 bg-download-black self-stretch shadow-[0px_22px_25px_rgba(93,_92,_92,_0.1)] rounded-81xl [background:linear-gradient(180deg,_#fff,_#fdfdfd)] min-w-[136px] max-w-[138px] box-border flex flex-row items-start justify-start shrink-0 z-[2] ml-[-52.2px] border-[2px] border-solid border-download-black hover:scale-110 hover:opacity-90 transition-transform duration-300 mq450:flex-1">
+                <a href="#" className="[text-decoration:none] w-[48.2px] relative text-mini font-nuckle text-download-black text-left inline-block shrink-0 z-[3]">
                   About
                 </a>
-              </div>
-
+              </button>
+            
               <div className="flex-1 flex flex-col items-start justify-start py-0 pr-[5px] pl-0 box-border min-w-[142px] max-w-[144px] ml-[-52.2px] ">
                 <button className="cursor-pointer pt-2.5 px-[21px] pb-[7px] bg-[transparent] self-stretch shadow-[-11px_22px_30px_rgba(93,_92,_92,_0.1)] rounded-81xl [background:linear-gradient(180deg,_#fff,_#fdfdfd)] 
                 flex flex-row items-start justify-start gap-[6.3px] shrink-0 z-[3] border-[2px] border-solid border-download-black hover:scale-110 hover:opacity-90 transition-transform duration-300 mq450:flex-1">
