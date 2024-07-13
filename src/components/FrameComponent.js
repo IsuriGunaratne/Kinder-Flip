@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import React, { useState } from 'react';
 
+
 const FrameComponent = ({ className = "" }) => {
   const [activeButton, setActiveButton] = useState('Home');
 
@@ -14,7 +15,6 @@ const FrameComponent = ({ className = "" }) => {
     activeText: " relative text-mini font-bold font-nuckle content-white text-white text-left inline-block shrink-0 z-[3] [text-decoration:none]",
     inactiveText: "[text-decoration:none] w-full relative text-mini font-nuckle text-download-black text-left inline-block shrink-0 z-[3]",
   };
-
 
   return (
     <div
@@ -85,23 +85,8 @@ const FrameComponent = ({ className = "" }) => {
               </div>
             </div> */}
           </div>
-          <div className="flex-1 flex flex-col items-start justify-start pt-1 px-0 pb-0 box-border min-w-[322px] max-w-full text-mini text-download-black">
-            <div className="self-stretch flex flex-row items-start justify-center [row-gap:20px] mq800:flex-wrap">
-              <div className="flex-1 flex flex-col items-start justify-start py-0 pr-[5px] pl-0 box-border min-w-[142px] max-w-[144px]">
-                <button className="cursor-pointer pt-1.5 px-[26px] pb-0.5 bg-download-black self-stretch shadow-[0px_22px_75px_rgba(33,_32,_32,_0.2)] rounded-81xl flex flex-row items-start justify-start shrink-0 z-[1] border-[6px] border-solid border-download-nero hover:bg-darkslategray-200 hover:box-border hover:border-[6px] hover:border-solid hover:border-gainsboro-100">
-                  <div className="h-[41.1px] w-[138.5px] relative shadow-[0px_22px_75px_rgba(33,_32,_32,_0.2)] rounded-81xl bg-download-black box-border hidden border-[6px] border-solid border-download-nero" />
-                  <a className="[text-decoration:none] w-[64.8px] relative text-mini font-bold font-nuckle text-download-nero text-left inline-block shrink-0 z-[3]">
-                    Home
-                  </a>
-                </button>
-                
-              </div>
-               <button className="cursor-pointer pt-2.5 px-[26px] pb-1.5 bg-download-black self-stretch shadow-[0px_22px_25px_rgba(93,_92,_92,_0.1)] rounded-81xl [background:linear-gradient(180deg,_#fff,_#fdfdfd)] min-w-[136px] max-w-[138px] box-border flex flex-row items-start justify-start shrink-0 z-[2] ml-[-52.2px] border-[2px] border-solid border-download-black hover:scale-110 hover:opacity-90 transition-transform duration-300 mq450:flex-1">
-                <a href="#" className="[text-decoration:none] w-[48.2px] relative text-mini font-nuckle text-download-black text-left inline-block shrink-0 z-[3]">
-                  About
-                </a>
-              </button>
-
+          
+{/* navigation bar */}
 
               <div className={`flex-1 flex flex-col items-start justify-start pt-1 px-0 pb-0 box-border min-w-[322px] max-w-full text-mini text-download-black ${className}`}>
                 <div className="self-stretch flex flex-row items-start justify-center [row-gap:20px] mq800:flex-wrap">
@@ -134,6 +119,7 @@ const FrameComponent = ({ className = "" }) => {
                   </div>
                 </div>
               </div>
+
         </div>
         <div className="flex flex-col items-start justify-start pt-4 pb-0 pr-2.5 pl-0">
         <a href="#">
