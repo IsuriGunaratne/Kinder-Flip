@@ -1,6 +1,20 @@
 import PropTypes from "prop-types";
+import React, { useState } from 'react';
 
 const FrameComponent = ({ className = "" }) => {
+  const [activeButton, setActiveButton] = useState('Home');
+
+  const handleButtonClick = (buttonName) => {
+    setActiveButton(buttonName);
+  };
+
+  const buttonStyles = {
+    home: "cursor-pointer pt-1.5 px-[26px] pb-0.5 bg-download-black self-stretch shadow-[0px_22px_75px_rgba(33,_32,_32,_0.2)] rounded-81xl flex flex-row items-start justify-start shrink-0 z-[1] border-[6px] border-solid border-download-nero",
+    other: "cursor-pointer pt-2.5 px-[26px] pb-1.5 bg-[transparent] self-stretch shadow-[0px_22px_25px_rgba(93,_92,_92,_0.1)] rounded-81xl [background:linear-gradient(180deg,_#fff,_#fdfdfd)] min-w-[136px] max-w-[145px] box-border flex flex-row items-start justify-start shrink-0 z-[1] border-[2px] border-solid border-download-black hover:scale-110 hover:opacity-90 transition-transform duration-300 mq450:flex-1",
+    activeText: " relative text-mini font-bold font-nuckle content-white text-white text-left inline-block shrink-0 z-[3] [text-decoration:none]",
+    inactiveText: "[text-decoration:none] w-full relative text-mini font-nuckle text-download-black text-left inline-block shrink-0 z-[3]",
+  };
+
 
   return (
     <div
@@ -87,35 +101,40 @@ const FrameComponent = ({ className = "" }) => {
                   About
                 </a>
               </button>
-            
-              <div className="flex-1 flex flex-col items-start justify-start py-0 pr-[5px] pl-0 box-border min-w-[142px] max-w-[144px] ml-[-52.2px] ">
-                <button className="cursor-pointer pt-2.5 px-[21px] pb-[7px] bg-[transparent] self-stretch shadow-[-11px_22px_30px_rgba(93,_92,_92,_0.1)] rounded-81xl [background:linear-gradient(180deg,_#fff,_#fdfdfd)] 
-                flex flex-row items-start justify-start gap-[6.3px] shrink-0 z-[3] border-[2px] border-solid border-download-black hover:scale-110 hover:opacity-90 transition-transform duration-300 mq450:flex-1">
-                  <img
-                    className="h-[16.3px] w-[16.3px] relative z-[4]"
-                    alt=""
-                    src="/outlinegeneralshoppingbag.svg"
-                  />
-                  <a href="#" className="[text-decoration:none] w-[48.2px] relative text-mini font-nuckle text-download-black text-left inline-block shrink-0 z-[4]">
-                    Shop
-                  </a>
-                </button>
+
+            {/* navigation bar */}
+
+              <div className={`flex-1 flex flex-col items-start justify-start pt-1 px-0 pb-0 box-border min-w-[322px] max-w-full text-mini text-download-black ${className}`}>
+                <div className="self-stretch flex flex-row items-start justify-center [row-gap:20px] mq800:flex-wrap">
+                  <div className="flex-1 flex flex-col items-start justify-start py-0 pr-[5px] pl-0 box-border min-w-[142px] max-w-[144px]">
+                    <button className={activeButton === 'Home' ? buttonStyles.home : buttonStyles.other} onClick={() => handleButtonClick('Home')}>
+                      <a className={activeButton === 'Home' ? buttonStyles.activeText : buttonStyles.inactiveText}>Home</a>
+                    </button>
+                  </div>
+                  <div className="flex-1 flex flex-col items-start justify-start py-0 pr-[5px] pl-0 box-border min-w-[142px] max-w-[144px] ml-[-52.2px]">
+                    <button className={activeButton === 'About' ? buttonStyles.home : buttonStyles.other} onClick={() => handleButtonClick('About')}>
+                      <a href="#" className={activeButton === 'About' ? buttonStyles.activeText : buttonStyles.inactiveText}>About</a>
+                    </button>
+                  </div>
+                  
+                  <div className="flex-1 flex flex-col items-start justify-start py-0 pr-[4px] pl-0 box-border min-w-[142px] max-w-[144px] ml-[-52.2px]">
+                    <button className={activeButton === 'Shop' ? buttonStyles.home : buttonStyles.other} onClick={() => handleButtonClick('Shop')}>
+                      <img className={`h-[16.3px] w-[16.3px] relative z-[4] ${activeButton === 'Shop' ? 'filter invert' : ''} mr-[1px]`} alt="" src="/outlinegeneralshoppingbag.svg" />
+                        <a href="#" className={activeButton === 'Shop' ? buttonStyles.activeText : buttonStyles.inactiveText}>Shop</a>
+                    </button>
+                  </div>
+                    <div className="flex-1 flex flex-col items-start justify-start py-0 pr-[5px] pl-0 box-border min-w-[142px] max-w-[144px] ml-[-52.2px]">
+                    <button className={activeButton === 'Blog' ? buttonStyles.home : buttonStyles.other} onClick={() => handleButtonClick('Blog')}>
+                      <a href="#" className={activeButton === 'Blog' ? buttonStyles.activeText : buttonStyles.inactiveText}>Blog</a>
+                    </button>
+                  </div>
+                  <div className="flex-1 flex flex-col items-start justify-start py-0 pr-[5px] pl-0 box-border min-w-[145px] max-w-[144px] ml-[-60.2px]">
+                    <button className={activeButton === 'Contact us' ? buttonStyles.home : buttonStyles.other} onClick={() => handleButtonClick('Contact us')}>
+                      <a href="#" className={activeButton === 'Contact us' ? buttonStyles.activeText : buttonStyles.inactiveText}>Contact us</a>
+                    </button>
+                  </div>
+                </div>
               </div>
-              <button className="cursor-pointer pt-2.5 px-[30px] pb-1.5 bg-[transparent] flex-[0.5581] shadow-[-6px_22px_25px_rgba(93,_92,_92,_0.1)] rounded-81xl [background:linear-gradient(180deg,_#fff,_#fdfdfd)] 
-                box-border flex flex-row items-start justify-start min-w-[136px] max-w-[138px] shrink-0 z-[4] ml-[-52.2px] border-[2px] border-solid border-download-black
-                mq450:flex-1 hover:scale-110 hover:opacity-90 transition-transform duration-300">
-                <a href="#" className="[text-decoration:none] w-[55.5px] relative text-mini font-nuckle text-download-black text-left inline-block shrink-0 z-[5]">
-                  Blog
-                </a>
-              </button>
-              <button className="cursor-pointer pt-2.5 pb-[7px] pr-1.5 pl-[25px] bg-[transparent] flex-[0.7753] shadow-[-6px_22px_25px_rgba(93,_92,_92,_0.1)] rounded-81xl [background:linear-gradient(180deg,_#fff,_#fdfdfd)] box-border flex flex-row items-start justify-start min-w-[136px] max-w-[138px] shrink-0 whitespace-nowrap z-[5] ml-[-52.2px] border-[2px] border-solid border-download-black
-                 mq450:flex-1 hover:scale-110 hover:opacity-90 transition-transform duration-300">
-                <a href="#" className="[text-decoration:none] w-[103px] relative text-mini font-nuckle text-download-black text-left inline-block shrink-0 z-[6] ">
-                  Contact us
-                </a>
-              </button>
-            </div>
-          </div>
         </div>
         <div className="flex flex-col items-start justify-start pt-4 pb-0 pr-2.5 pl-0">
         <a href="#">
