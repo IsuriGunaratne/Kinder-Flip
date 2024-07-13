@@ -124,7 +124,7 @@ const FrameComponent = ({ className = "" }) => {
           <img
             className="icon w-[25px] h-[26px] relative z-[1] hover:scale-110 hover:opacity-80 transition-transform  duration-300"
             loading="lazy"
-            alt="Search"
+            alt=""
             src="/outlineinterfacesearch.svg"
           />
         </a>
@@ -134,7 +134,7 @@ const FrameComponent = ({ className = "" }) => {
           <img
             className="icon w-[27px] h-[27px] relative z-[1] hover:scale-110 hover:opacity-80 transition-transform duration-300"
             loading="lazy"
-            alt="User"
+            alt=""
             src="/outlinecommunicationuser.svg"
           />
         </a>
@@ -144,7 +144,7 @@ const FrameComponent = ({ className = "" }) => {
           <img
             className="icon w-6 h-[25px] relative overflow-hidden shrink-0 z-[1] hover:scale-110 hover:opacity-80 transition-transform  duration-300"
             loading="lazy"
-            alt="Heart"
+            alt=""
             src="/heart-1.svg"
           />
         </a>
@@ -154,7 +154,7 @@ const FrameComponent = ({ className = "" }) => {
           <img
             className="icon w-8 h-[33px] relative overflow-hidden shrink-0 z-[1] hover:scale-110 hover:opacity-80 transition-transform duration-300"
             loading="lazy"
-            alt="Shopping Bag"
+            alt=""
             src="/shoppingbag-1.svg"
           />
         </a>
