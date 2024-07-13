@@ -36,7 +36,7 @@ const FrameComponent = ({ className = "" }) => {
             <img
               className="w-[197px] h-[45px] relative object-contain z-[2] transition-transform duration-300 hover:scale-y-[-1]"
               loading="lazy"
-              alt="kinder-flip"
+              alt=""
               src="/kinder-flip-light-blue-2@2x.png"
             />
               <div className="flex flex-row items-start justify-start py-[0rem] pr-[0rem] pl-[0.562rem]">
