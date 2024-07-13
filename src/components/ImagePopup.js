@@ -8,7 +8,7 @@ const ImagePopup = () => {
     <img
       className="w-[290px] h-[456.5px] object-cover mt-[-25px] right-[100px]"
       loading="lazy"
-      alt="left"
+      alt=""
       src="/left@2x.png"
     />
   </div>
@@ -16,7 +16,7 @@ const ImagePopup = () => {
     <img
       className="w-[285px] h-[418.5px] object-cover"
       loading="lazy"
-      alt="left-middle"
+      alt=""
       src="/left-middle@2x.png"
     />
   </div>
@@ -24,7 +24,7 @@ const ImagePopup = () => {
     <img
       className="w-[285px] h-[371px] object-cover"
       loading="lazy"
-      alt="right-middle"
+      alt=""
       src="/right-middle@2x.png"
     />
   </div>
@@ -32,7 +32,7 @@ const ImagePopup = () => {
     <img
       className="w-[285px] h-[371px] object-cover rounded-2xl"
       loading="lazy"
-      alt="right"
+      alt=""
       src="/right@2x.png"
     />
   </div>
