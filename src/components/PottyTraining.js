@@ -6,9 +6,16 @@ const PottyTraining = ({ className = "" }) => {
       className={`self-stretch flex flex-col items-start justify-start max-w-full shrink-0 text-center text-21xl text-download-nero font-nuckle ${className}`}
     >
       <div className="self-stretch flex flex-row items-start justify-start py-0 pr-0 pl-[3px] box-border max-w-full">
-        <div className="flex-1 bg-gray-800 flex flex-row items-start justify-start pt-[91px] px-[499px] pb-[89px] box-border max-w-full z-[8] mq450:pl-5 mq450:pr-5 mq450:box-border mq800:pl-[124px] mq800:pr-[124px] mq800:box-border mq1300:pl-[249px] mq1300:pr-[249px] mq1300:box-border">
-          
-        </div>
+         <div
+            className="flex-1 bg-gray-800 flex flex-row items-start  justify-start pt-[59px] px-[499px] pb-[89px] box-border max-w-full z-[8] mq450:pl-5 mq450:pr-5 mq450:box-border mq800:pl-[124px] mq800:pr-[124px] mq800:box-border mq1300:pl-[249px] mq1300:pr-[249px] mq1300:box-border relative bg-cover bg-center"
+            style={{ backgroundImage: "url('/mask-group-4@2x.png')" }}
+          >
+            <h1 className="m-0 w-[25.75rem] relative text-inherit leading-[1.813rem] inline-block shrink-0 max-w-full z-[9] font-inherit mq450:text-[1.5rem] mq450:leading-[2.25rem] mq800:text-[2rem] mq800:leading-[3rem]">
+              <span className="font-light">Made fo</span>
+              <span className="font-light">{`r `}</span>
+              <b>Magic</b>
+            </h1>
+          </div>
       </div>
       <div className="self-stretch flex flex-col items-start justify-start py-[94px] px-[84px] box-border relative gap-[40px] max-w-full mt-[-3px] text-left text-56xl mq1125:pl-[42px] mq1125:pr-[42px] mq1125:box-border mq800:gap-[20px] mq800:pt-[250px] mq800:px-[21px] mq800:pb-[61px] mq800:box-border">
         <img
