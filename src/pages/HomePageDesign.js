@@ -38,13 +38,6 @@ const HomePageDesign = () => {
         <Footer />
       </main>
 
-      <img
-        className="w-full right-[0px] left-[0px] h-[176px] absolute !m-[0] bottom-[740px] object-cover z-[7] mx-auto"
-        loading="lazy"
-        alt=""
-        src="/mask-group-4@2x.png"
-      />
-
     </div>
   );
 };
