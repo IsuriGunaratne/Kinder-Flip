@@ -63,7 +63,7 @@ const HappyCustomers = ({ className = "" }) => {
                     key={index}
                     className="h-[26.8px] w-[26.8px] relative min-h-[27px]"
                     loading="lazy"
-                   
+                    alt={`Star ${index}`}
                     src="/outlinestatusstar.svg"  
                   />
                 ))}
